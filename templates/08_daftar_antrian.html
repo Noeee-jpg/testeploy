@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main_menu.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="menu">
+            <h2><a href="{{url_for('biodata_admin')}}">Bidoata admin</a></h2>
+            <h2><a href="{{url_for('tambah_dokter')}}">Tambah Dokter</a></h2>
+            <h2><a href="{{url_for('daftar_antrian')}}">Daftar Antrian</a></h2>
+            <h2>Keluar</h2>
+        </div>
+    </header>
+    <div class="container">
+        <table class="appointment-table">
+            <thead>
+                <tr>
+                    <th>Hari</th>
+                    <th>Tanggal</th>
+                    <th>Jam</th>
+                    <th>Nama Dokter</th>
+                    <th>Spesialis</th>
+                    <th>harga</th>
+                    <th>No Antrian</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Senin</td>
+                    <td>5 Juni 2024</td>
+                    <td>09:00</td>
+                    <td>Dr. John Doe</td>
+                    <td>Spesialis Jantung</td>
+                    <td>Rp.500.000</td>
+                    <td>001</td>
+                </tr>
+                <!-- Tambahkan baris tambahan sesuai kebutuhan -->
+            </tbody>
+        </table>
+    </div>
+    

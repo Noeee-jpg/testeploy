@@ -1,0 +1,163 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    background-image: url('bg.jpg');
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu h2 {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 14px; /* Set the font size for menu items */
+}
+
+.menu h2 a {
+    color: white; /* Set the color of the links to white */
+}
+
+.menu h2:hover {
+    text-decoration: underline;
+}
+
+.specialization {
+    padding: 20px;
+}
+
+.doctor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.specialization h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Memusatkan teks */
+}
+
+
+.doctor-container h1 {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.doctor-container h1:hover {
+    background-color: #f0f0f0;
+}
+
+/* Menambahkan gaya untuk nama dan nomor KTP */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Menggunakan min-height untuk menjamin bahwa kontainer mencakup setidaknya 100% tinggi viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Memberi warna latar belakang semi-transparan */
+}
+
+.personal-info {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.personal-info:hover {
+    background-color: #f9f9f9;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+.personal-info p span {
+    font-weight: bold;
+}
+
+.appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.appointment-table th, .appointment-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.appointment-table th {
+    background-color: #f2f2f2;
+}
+
+.appointment-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.appointment-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Gaya untuk info dokter */
+.doctor-info {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.doctor-info h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.doctor-info p {
+    margin-bottom: 5px;
+}
+
+/* Gaya untuk tombol Buat Janji */
+.doctor-info button {
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.doctor-info button:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol saat digulir */
+}

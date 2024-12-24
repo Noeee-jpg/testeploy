@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='loginreg.css') }}">
+</head>
+<body>
+  <div class="container">
+      <h1>Register</h1>
+      <form action="{{url_for('register')}}" method="POST" class="space-y-4">
+          <div>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          </div>
+          <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <button type="submit">Register</button>
+      </form>
+      <p>Sudah punya akun? <a href="{{url_for('login_page')}}">Login kesini</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main_menu.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="menu">
+            <h2><a href="{{url_for('janji_temu')}}">Janji Temu</a></h2>
+            <!-- <h2><a href="{{url_for('biodata_diri')}}">Bidoata Diri</a></h2> -->
+            <h2>Keluar</h2>
+        </div>
+    </header>
+    <section class="specialization">
+        <h1>Pilih Spesialis Dokter</h1>
+        <div class="doctor-container">
+            <h1>Spesialis 1</h1>
+            <h1>Spesialis 2</h1>
+            <h1>Spesialis 3</h1>
+            <h1>Spesialis 4</h1>
+            <h1>Spesialis 5</h1>
+        </div>
+    </section>
+</body>
+</html>

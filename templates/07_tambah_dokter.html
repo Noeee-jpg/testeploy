@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='loginreg.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Dokter Baru</h1>
+        <label for="Nama_dokter">nama dokter:</label>
+        <input type="text" id="Nama_dokter" name="Nama_dokter">
+        <label for="Spesialis">Spesialis:</label>
+        <input type="text" id="Spesialis" name="Spesialis">
+        <label for="jadwal_temu">jadwal temu:</label>
+        <input type="datetime" id="jadwal" name="jadwal_temu">
+        <label for="harga ">harga dokter:</label>
+        <input type="text" id="harga" name="harga">
+        <a href="{{ url_for('admin_menu') }}"><button class="save-button">save</button></a>
+    </div>
+</body> 
+</html>

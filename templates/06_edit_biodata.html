@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='loginreg.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit biodata</h1>
+        <label for="nama_lengkap">nama lengkap:</label>
+        <input type="text" id="nama_lengkap" name="nama_lengkap">
+        <label for="no_ktp">no ktp:</label>
+        <input type="no_ktp" id="no_ktp" name="no_ktp">
+        <label for="no_hp">no hp:</label>
+        <input type="no_hp" id="no_hp" name="no_hp">
+        <label for="alamat">alamat:</label>
+        <input type="alamat" id="alamat" name="alamat">
+        <a href="{{ url_for('biodata_admin') }}"><button class="save-button">save</button></a>
+      </form>
+    </div>
+</body> 
+</html>

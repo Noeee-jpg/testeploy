@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main_menu.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="menu">
+            <h2><a href="{{ url_for('biodata_admin') }}">Biodata admin</a></h2>
+            <h2><a href="{{ url_for('tambah_dokter') }}">Tambah Dokter</a></h2>
+            <h2><a href="{{ url_for('daftar_antrian') }}">Daftar Antrian</a></h2>
+            <h2><a href="{{ url_for('keluar') }}">Keluar</a></h2>
+        </div>
+    </header>
+    <div class="container">
+        <div class="personal-info">
+            <h1>Biodata kamu</h1>
+            {% if data %}
+                <p><span>Nama: {{ data.2 }}</p>
+                <p><span>No KTP: {{ data.5 }}</p>
+                <p><span>No HP: {{ data.6 }}</p>
+                <p><span>Alamat: {{ data.7 }}</p>
+            {% else %}
+                <p>Data kamu masih kosong, silakan klik tombol edit untuk mengisi data kamu.</p>
+            {% endif %}
+            <a href="{{ url_for('edit_biodata') }}"><button class="edit-button">Edit Biodata</button></a>
+        </div>
+    </div>    
+</body>
+</html>
